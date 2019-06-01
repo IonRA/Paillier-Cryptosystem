@@ -38,7 +38,7 @@ public class PaillierEncryption {
             System.out.println(pc.encrypt(sb.toString()));
             System.out.println();
             List<BigInteger> l = pc.decrypt(pc.encrypt());
-           // System.out.println(l);
+           
             for (BigInteger bi : l)
                 System.out.print(Character.valueOf((char)bi.intValue()));
             br.close();
